@@ -1,0 +1,17 @@
+button{
+    width: 750rpx;
+    min-width: 750rpx;
+}
+view{
+    text-align: center;
+    color: #bacac6;
+    font-size: small;
+}
+input{
+    width: 750rpx;
+    background-color: #FFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-top: 10px;
+}

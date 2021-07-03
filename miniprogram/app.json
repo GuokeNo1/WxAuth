@@ -1,0 +1,16 @@
+{
+    "pages": [
+        "Page/index/index",
+        "Page/login/login",
+        "Page/addCard/addCard"
+    ],
+    "window": {
+        "backgroundColor": "#F6F6F6",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#758a99",
+        "navigationBarTitleText": "令牌",
+        "navigationBarTextStyle": "black"
+    },
+    "sitemapLocation": "sitemap.json",
+    "style": "v2"
+}

@@ -1,0 +1,4 @@
+<button wx:if="{{!avatarUrl}}" open-type="getUserInfo">获取头像</button>
+<view wx:if="{{!avatarUrl}}">本程序获取头像仅用于展示</view>
+<input type="password" bindinput="input" value="{{password}}" placeholder="设置密码用于云端存储密钥加密"></input>
+<view>密码千万别忘了，忘了云端存储的密钥就解不开了</view>

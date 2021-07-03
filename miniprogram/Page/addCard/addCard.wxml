@@ -1,0 +1,8 @@
+<radio-group bindchange="change_type">
+    <radio value="1" checked="1">Steam</radio>
+    <radio value="2">Google</radio>
+</radio-group>
+<input id="name_input" type="text" placeholder="输入标签名称" value="{{name}}" bindinput="input_name"></input>
+<input type="text" placeholder="输入令牌密钥" value="{{sercet_key}}" bindinput="input"></input>
+<checkbox wx:if="{{password}}" checked="{{cloud_checked}}" bindtap="cloud_check">云存储令牌</checkbox>
+<view class="btn" hover-class="btn-hover" bindtap="add_btn">添加</view>

@@ -1,0 +1,31 @@
+radio-group{
+    padding: 10px;
+    background-color: #FFF;
+    margin-bottom: 10px;
+}
+radio{
+    margin-right: 5px;
+}
+input{
+    padding: 10px;
+    background-color: #FFF;
+}
+#name_input{
+    margin-bottom: 1px;
+}
+checkbox{
+    background-color: #FFF;
+    padding: 20rpx;
+    border-bottom-left-radius: 20rpx;
+    border-bottom-right-radius: 20rpx;
+}
+.btn{
+    background-color: #FFF;
+    margin-top: 10px;
+    text-align: center;
+    padding: 20rpx;
+    font-size: large;
+}
+.btn-hover{
+    background-color: #EEE;
+}

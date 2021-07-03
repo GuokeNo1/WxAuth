@@ -1,0 +1,13 @@
+<view class="card{{' ' + stype}}">
+  <view class="icon"></view>
+  <view class="info">
+    <view class="text">
+      <view class="name">{{name}}</view>
+      <view class="token">{{code}}</view>
+    </view>
+    <view class="ico">
+      <view class="state_icon{{iscloud?' state_cloud':''}}"></view>
+      <view class="state_update"></view>
+    </view>
+  </view>
+</view>
