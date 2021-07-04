@@ -1,4 +1,4 @@
-<card wx:for="{{cards}}" rtype="{{item.rtype}}" name="{{item.name}}" secretKey="{{item.key}}" iscloud="{{item.hash}}"></card>
+<card wx:for="{{cards}}" rtype="{{item.rtype}}" name="{{item.name}}" secretKey="{{item.key}}" iscloud="{{item.hash}}" enc="{{item.enc}}"></card>
 <view class="bottom_btns">
     <image class="b_btn login" bindtap="login" src="{{avatarUrl}}" />
     <image wx:if="{{user_token}}" class="b_btn update" bindtap="update_remote" src="/Image/update.png" />

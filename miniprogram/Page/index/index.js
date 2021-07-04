@@ -96,10 +96,13 @@ Page({
         for(var i in remote){
           remote[i].enc = true
           var crypto = require('../../tools/crypto.js')
-          var key = crypto.Guoke.decrypt(remote[i].key,app.globalData.password)
-          if(crypto.MD5(key).toString() == remote[i].hash){
-            remote[i].key = key
-            remote[i].enc = false
+          if(app.globalData.password){
+            var key = crypto.Guoke.decrypt(remote[i].key,app.globalData.password)
+            if(crypto.MD5(key).toString() == remote[i].hash){
+              remote[i].key = key
+              remote[i].enc = false
+            }
+          }else{
           }
         }
         this.data.remote = remote

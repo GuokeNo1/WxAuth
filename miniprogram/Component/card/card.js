@@ -20,6 +20,10 @@ Component({
     iscloud: {
       type: Boolean,
       value: false
+    },
+    enc:{
+      type: Boolean,
+      value: false
     }
   },
 
@@ -43,6 +47,10 @@ Component({
     switch(this.data.rtype){
       case 1:
         this.setData({stype: "steam"})
+        if(this.data.iscloud && this.data.enc){
+          this.setData({name: this.data.name+"-密钥解密失败"})
+          break
+        }
         this.data.thread = setInterval(()=>{
           var steam = require("../../tools/steam.js")
           var code = steam.calculateCode(this.data.secretKey)
